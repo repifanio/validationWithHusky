@@ -5,12 +5,12 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "echo test do husky"
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staaged": {
+  "lint-staged": {
     "*.js": [
-      "eslint -fix",
+      "eslint --fix",
       "git add"
     ]
   },
