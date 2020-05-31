@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "a17c2db3-2397-4ad8-9479-a87538c72441",
+		"name": "Husky Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Unica Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "44c37836-4fb7-41ed-bf25-1def3bd4fb09",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
